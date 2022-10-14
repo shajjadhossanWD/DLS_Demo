@@ -3,6 +3,7 @@ import {
     Route,
     Routes,
   } from "react-router-dom";
+import AdminDashboard from '../Pages/Dashboard/AdminDashboard/AdminDashboard';
 import Dashboard from '../Pages/Dashboard/Dashboard';
 import Forgetpassword from '../Pages/Forgetpassword/ForgetPassword';
 import Home from '../Pages/Home/Home';
@@ -21,8 +22,14 @@ const Router = () => {
         <Route path="/otp" element={<Otp/>}/>
         <Route path="/forgetpassword" element={<Forgetpassword/>}/>
         <Route path="/resetpassword" element={<ResetPassword/>}/>
- 
+        <Route path="/admin" element={
+              <Dashboard />
+          }>
+            <Route index element={<AdminDashboard />} />
+            <Route path='dashboard' element={<AdminDashboard />} />
+            </Route>
         </Routes>
+       
       </div>
     );
 };

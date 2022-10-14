@@ -1,0 +1,49 @@
+.dashboardDiv {
+    background-color: #1A1C33;
+    height: 100%;
+    width: 100%;
+}
+
+.dashboardTxt {
+    color: white;
+    line-height: 10px;
+}
+
+.dashboardTxt p{
+    font-size: 0.9rem;
+}
+
+.cardDash {
+    background-color: #272D47;
+    cursor: pointer;
+}
+
+svg {
+    color: white;
+}
+
+.demoP {
+    visibility: hidden;
+}
+.coinsIcon{
+    font-size: 3rem;
+    margin-right: 0rem;
+    margin-bottom: -0.8rem;
+}
+.parcentage_text{
+    line-height: 12px;
+}
+.dashboardTxt h6{
+    font-size: 0.9rem;
+    text-align: start;
+    width: 100%;
+}
+@media only screen and (max-width: 994px) {
+    .dashboardDiv {
+        background-color: #1A1C33;
+        height: auto;
+        background-size: cover;
+    }
+
+
+}
